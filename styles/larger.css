@@ -1,0 +1,43 @@
+@media (min-width: 700px) {
+  .navigation {
+    display: block;
+    background-color: #333;
+  }
+
+  .navigation ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .navigation li {
+    border: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  
+
+  #courses {
+    grid-column: 1 / -1;
+  }
+
+  #courseContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .course-card {
+    flex: 1 1 200px;
+  }
+  #about-photo {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+}
