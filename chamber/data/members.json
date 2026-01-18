@@ -1,0 +1,74 @@
+{
+  "members": [
+    {
+      "name": "GoCoworking (Las Palmas)",
+      "address": "C/Muelle Las Palmas esquina con Agustín Millares Carló, 2A, 35003 Las Palmas de Gran Canaria, España",
+      "phone": "+34 687 818 281",
+      "website": "https://www.gocoworking.es/en/",
+      "image": "members/gocoworking.webp",
+      "membership": 2,
+      "category": "Business Services (Coworking)",
+      "tagline": "Coworking and workspaces for professionals."
+    },
+    {
+      "name": "Empire Systems (Agencia de Marketing)",
+      "address": "Av. Alcalde José Ramírez Bethencourt, 13, 35004 Las Palmas de Gran Canaria, España",
+      "phone": "+34 677 777 268",
+      "website": "https://empiresystems.io/",
+      "image": "members/empiresystems.webp",
+      "membership": 3,
+      "category": "Marketing",
+      "tagline": "Digital marketing and web services."
+    },
+    {
+      "name": "Asesores GLA (Inmobiliaria)",
+      "address": "Calle Churruca, 25, 35016 Las Palmas de Gran Canaria, España",
+      "phone": "+34 928 36 99 22",
+      "website": "https://asesoresgla.es/",
+      "image": "members/asesoresgla.webp",
+      "membership": 3,
+      "category": "Real Estate",
+      "tagline": "Real estate services in Las Palmas."
+    },
+    {
+      "name": "BEATS Fitness (BEATS Las Palmas)",
+      "address": "Avenida Escaleritas 31, Las Palmas de Gran Canaria, España",
+      "phone": "+34 722 340 493",
+      "website": "https://beatsfitness.es/centros/beats-las-palmas/",
+      "image": "members/beatsfitness.webp",
+      "membership": 2,
+      "category": "Health & Fitness",
+      "tagline": "Fitness club and training programs."
+    },
+    {
+      "name": "Ferretería Hermanos Perdomo",
+      "address": "Calle Pérez Muñoz, 128, 35009 Las Palmas de Gran Canaria, España",
+      "phone": "+34 928 462 180",
+      "website": "https://www.hermanosperdomo.es/",
+      "image": "members/hermanosperdomo.webp",
+      "membership": 1,
+      "category": "Retail (Hardware)",
+      "tagline": "Hardware and tools supply store."
+    },
+    {
+      "name": "Reglade3 (Estudio de Diseño)",
+      "address": "Campus Universitario de Tafira (ULPGC), Edificio Polivalente II, planta 3ª, oficina 6, 35017 Las Palmas de Gran Canaria, España",
+      "phone": "+34 928 457 094",
+      "website": "https://regladetres.es/",
+      "image": "members/regladetres.webp",
+      "membership": 2,
+      "category": "Design",
+      "tagline": "Graphic design, editorial and web design."
+    },
+    {
+      "name": "NemeSys 2.0",
+      "address": "C/ Pintor Cristino de Vera, 52, 35018 Las Palmas de Gran Canaria, España",
+      "phone": "+34 619 036 150",
+      "website": "https://nemesys.es/",
+      "image": "members/nemesys.webp",
+      "membership": 3,
+      "category": "Technology",
+      "tagline": "Custom software and digital solutions."
+    }
+  ]
+}
