@@ -39,4 +39,27 @@
     gap: 1.5rem;
     align-items: start;
   }
+
+  .members.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer .footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: left;
+  }
+
+  footer .contact-info,
+  footer .social-links,
+  footer .development-info {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1000px) {
+  .members.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

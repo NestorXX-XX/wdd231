@@ -1,8 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   background-color: #f8f8f8;
   color: #222;
+  overflow-x: hidden;
 }
 
 header {
@@ -12,6 +17,8 @@ header {
   background-color: #333;
   color: white;
   padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 header img {
@@ -24,19 +31,20 @@ header span {
 }
 
 .hamburger::before {
-  content: "\2630"; /* ☰ */
+  content: "\2630";
   font-size: 1.5rem;
   cursor: pointer;
   color: white;
 }
 
 .hamburger.show::before {
-  content: "\00D7"; /* × */
+  content: "\00D7";
 }
 
 
 main {
   max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -47,6 +55,7 @@ section {
   padding: 1rem;
   margin-bottom: 1rem;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  max-width: 100%;
 }
 section img {
   max-width: 100%;
@@ -90,7 +99,6 @@ button:hover {
   border-color: #4caf50;
 }
 
-/* FOOTER */
 footer {
   background-color: #333;
   color: white;
@@ -132,6 +140,7 @@ footer a {
 }
 
 nav.navigation {
+  display: none;
   background-color: #333;
   color: #fff;
 }
@@ -150,11 +159,12 @@ nav.navigation a:focus {
 
 .navigation ul {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  align-items: stretch;
+  gap: 0;
   margin: 0;
-  padding: 0.5rem 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -164,4 +174,145 @@ nav.navigation a:focus {
 
 .navigation li {
   border-bottom: 1px solid #555;
+}
+
+.view-controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+.view-controls button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.view-controls button.active {
+  background-color: #4caf50;
+}
+
+.view-controls button.active:hover {
+  background-color: #45a049;
+}
+
+.members.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+.member-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 100%;
+}
+
+.member-card img {
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}
+
+.member-card h2 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.member-card p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.member-card .level {
+  font-weight: 600;
+  color: #4caf50;
+}
+
+.member-card a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.member-card a:hover {
+  text-decoration: underline;
+}
+
+.members.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+.members.list .member-card {
+  display: block;
+  text-align: left;
+}
+
+.members.list .member-card img {
+  display: none;
+}
+
+.members.list .member-card h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.members.list .member-card p {
+  margin: 0.2rem 0;
+  font-size: 0.85rem;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+footer .footer-content section {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+footer .footer-content h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: white;
+}
+
+footer .footer-content p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+footer .contact-info,
+footer .social-links,
+footer .development-info {
+  text-align: center;
+}
+
+footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
 }
