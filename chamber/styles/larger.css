@@ -1,21 +1,32 @@
 @media (min-width: 700px) {
+
   nav.navigation {
     display: block;
     background-color: #333;
   }
-  
+
   nav.navigation.show {
     display: block;
   }
 
   .navigation ul {
     display: flex;
-    justify-content: center;
+    flex-direction: row;          
+    justify-content: center;      
+    align-items: center;         
     gap: 2rem;
+
+    margin: 0;
+    padding: 0.5rem 0;
   }
 
   .navigation li {
     border: none;
+  }
+
+  .navigation a {
+    padding: 0.8rem 1rem;        
+    display: block;
   }
 
   .hamburger {
