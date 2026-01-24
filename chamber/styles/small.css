@@ -340,7 +340,7 @@ footer .social {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.3));
   color: white;
   padding: 2rem 1rem 1rem;
   text-align: center;
@@ -359,7 +359,7 @@ footer .social {
 
 .cta-button {
   display: inline-block;
-  background-color: #4caf50;
+  background-color: #2e7d32;
   color: white;
   padding: 0.8rem 2rem;
   border-radius: 5px;
@@ -369,7 +369,7 @@ footer .social {
 }
 
 .cta-button:hover {
-  background-color: #45a049;
+  background-color: #1b5e20;
 }
 
 .current-events {
