@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Directory of chamber members and local businesses in Las Palmas, Canary Islands.">
+  <meta name="description" content="Welcome to Las Palmas Chamber of Commerce. Discover local businesses, events, and opportunities in Las Palmas, Canary Islands.">
   <meta name="author" content="Nestor Gomez Artiles">
-  <title>Directory | Las Palmas Chamber of Commerce</title>
+  <title>Home | Las Palmas Chamber of Commerce</title>
 
   <link rel="icon" href="images/favicon.ico">
 
-  <meta property="og:title" content="Directory | Las Palmas Chamber of Commerce">
-  <meta property="og:description" content="Explore our chamber members and local businesses in Las Palmas, Canary Islands.">
+  <meta property="og:title" content="Home | Las Palmas Chamber of Commerce">
+  <meta property="og:description" content="Welcome to Las Palmas Chamber of Commerce. Discover local businesses, events, and opportunities in Las Palmas, Canary Islands.">
   <meta property="og:image" content="https://nestorxx-xx.github.io/wdd231/chamber/images/canary-islands.jpg">
-  <meta property="og:url" content="https://nestorxx-xx.github.io/wdd231/chamber/directory.html">
+  <meta property="og:url" content="https://nestorxx-xx.github.io/wdd231/chamber/index.html">
   <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,34 +25,76 @@
 
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/date.js" defer></script>
-  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/home.js" defer></script>
 </head>
 
 <body>
   <header>
   <span class="site-logo">🌐</span>
-  <span class="site-name">Nestor Gomez</span>
+  <span class="site-name">Las Palmas Chamber</span>
   <button id="nav-button" class="hamburger" aria-label="Menu"></button>
 </header>
 
   <nav id="nav-bar" class="navigation">
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li class="current"><a href="directory.html">Directory</a></li>
+    <li class="current"><a href="index.html">Home</a></li>
+    <li><a href="directory.html">Directory</a></li>
     <li><a href="discover.html">Discover</a></li>
     <li><a href="join.html">Join</a></li>
   </ul>
 </nav>
 
   <main>
-    <h1>Directory</h1>
-
-    <section class="view-controls" aria-label="Display options">
-      <button id="gridBtn" type="button" class="active">Grid</button>
-      <button id="listBtn" type="button">List</button>
+    <section class="hero">
+      <picture>
+        <source media="(min-width: 700px)" srcset="images/canary-islands.jpg">
+        <img src="images/canary-islands.jpg" alt="Las Palmas de Gran Canaria landscape">
+      </picture>
+      <div class="hero-content">
+        <h1>Welcome to Las Palmas</h1>
+        <p>Connecting businesses, building community</p>
+        <a href="join.html" class="cta-button">Join the Chamber</a>
+      </div>
     </section>
 
-    <section id="members" class="members grid" aria-label="Chamber members">
+    <section class="current-events">
+      <h2>Current Events</h2>
+      <div class="events-content">
+        <article>
+          <h3>Monthly Business Networking</h3>
+          <p><strong>Date:</strong> First Friday of every month</p>
+          <p><strong>Time:</strong> 6:00 PM - 8:00 PM</p>
+          <p><strong>Location:</strong> Chamber Office, 123 Main Street</p>
+          <p>Join us for our monthly networking event. Connect with local business owners and entrepreneurs.</p>
+        </article>
+        <article>
+          <h3>Small Business Workshop</h3>
+          <p><strong>Date:</strong> January 25, 2026</p>
+          <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+          <p><strong>Location:</strong> Online via Zoom</p>
+          <p>Learn about digital marketing strategies for small businesses. Free for chamber members.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <div id="weather-content">
+        <div class="current-weather">
+          <h3>Current Conditions</h3>
+          <p id="current-temp">Loading...</p>
+          <p id="current-desc">Loading...</p>
+        </div>
+        <div class="forecast">
+          <h3>3-Day Forecast</h3>
+          <div id="forecast-container"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div id="spotlights-container"></div>
     </section>
   </main>
 
