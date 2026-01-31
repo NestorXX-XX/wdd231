@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join Las Palmas Chamber of Commerce. Apply for membership and discover benefits for your business.">
+  <meta name="author" content="Nestor Gomez Artiles">
+  <title>Join | Las Palmas Chamber of Commerce</title>
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <meta property="og:title" content="Join | Las Palmas Chamber of Commerce">
+  <meta property="og:description" content="Apply for membership and discover benefits for your business.">
+  <meta property="og:image" content="https://nestorxx-xx.github.io/wdd231/chamber/images/canary-islands.jpg">
+  <meta property="og:url" content="https://nestorxx-xx.github.io/wdd231/chamber/join.html">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <span class="site-logo">🌐</span>
+    <span class="site-name">Las Palmas Chamber</span>
+    <button id="nav-button" class="hamburger" aria-label="Menu"></button>
+  </header>
+
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li class="current"><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Join the Chamber</h1>
+
+    <div class="join-layout">
+      <section class="join-form-section">
+        <form method="get" action="thankyou.html" id="membership-form">
+          <fieldset>
+            <legend>Applicant Information</legend>
+
+            <label for="firstname">
+              First name
+              <input type="text" id="firstname" name="firstname" title="Enter your first name" autocomplete="given-name" required>
+            </label>
+
+            <label for="lastname">
+              Last name
+              <input type="text" id="lastname" name="lastname" title="Enter your last name" autocomplete="family-name" required>
+            </label>
+
+            <label for="org-title">
+              Organizational title
+              <input type="text" id="org-title" name="title" title="Your title within your organization (letters, hyphens, spaces; minimum 7 characters)" autocomplete="organization-title" pattern="[A-Za-z\u00C0-\u024F\s\-]{7,}" placeholder="e.g. Marketing Director">
+            </label>
+
+            <label for="email">
+              Email address
+              <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email" placeholder="name@example.com" required>
+            </label>
+
+            <label for="phone">
+              Mobile phone number
+              <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Organization Information</legend>
+
+            <label for="organization">
+              Business or organization name
+              <input type="text" id="organization" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+            </label>
+
+            <label for="membership-level">
+              Membership level
+              <select id="membership-level" name="membership-level" title="Select a membership level">
+                <option value="np">NP Membership (Non-profit, no fee)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+              </select>
+            </label>
+
+            <label for="description">
+              Business or organization description
+              <textarea id="description" name="description" title="Describe your business or organization" rows="4"></textarea>
+            </label>
+          </fieldset>
+
+          <input type="hidden" id="timestamp" name="timestamp" value="">
+
+          <input type="submit" class="submit-button" value="Submit Application">
+        </form>
+      </section>
+
+      <aside class="membership-cards" aria-label="Membership levels">
+        <h2>Membership Levels</h2>
+        <div class="membership-cards-grid">
+          <article class="membership-card membership-card-np" id="card-np">
+            <h3>NP Membership</h3>
+            <p>For non-profit organizations. No fee.</p>
+            <a href="#modal-np" class="card-link" data-modal="modal-np">Learn more</a>
+          </article>
+          <article class="membership-card membership-card-bronze" id="card-bronze">
+            <h3>Bronze Membership</h3>
+            <p>Entry-level benefits for growing businesses.</p>
+            <a href="#modal-bronze" class="card-link" data-modal="modal-bronze">Learn more</a>
+          </article>
+          <article class="membership-card membership-card-silver" id="card-silver">
+            <h3>Silver Membership</h3>
+            <p>Enhanced visibility and networking.</p>
+            <a href="#modal-silver" class="card-link" data-modal="modal-silver">Learn more</a>
+          </article>
+          <article class="membership-card membership-card-gold" id="card-gold">
+            <h3>Gold Membership</h3>
+            <p>Premium benefits and spotlight placement.</p>
+            <a href="#modal-gold" class="card-link" data-modal="modal-gold">Learn more</a>
+          </article>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Modals for membership benefits -->
+    <div id="modal-np" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-np-title" aria-hidden="true">
+      <div class="modal-content">
+        <h2 id="modal-np-title">NP Membership Benefits</h2>
+        <p>Non-profit organizations join at no cost. Benefits include:</p>
+        <ul>
+          <li>Directory listing</li>
+          <li>Access to chamber publications</li>
+          <li>Monthly newsletter</li>
+          <li>Invitation to networking events</li>
+          <li>Community visibility</li>
+        </ul>
+        <button type="button" class="modal-close" aria-label="Close modal">Close</button>
+      </div>
+    </div>
+
+    <div id="modal-bronze" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-bronze-title" aria-hidden="true">
+      <div class="modal-content">
+        <h2 id="modal-bronze-title">Bronze Membership Benefits</h2>
+        <p>All NP benefits, plus:</p>
+        <ul>
+          <li>Enhanced directory listing</li>
+          <li>10% discount on chamber events</li>
+          <li>Quarterly training workshops</li>
+          <li>Social media mention opportunities</li>
+          <li>Business luncheon access</li>
+        </ul>
+        <button type="button" class="modal-close" aria-label="Close modal">Close</button>
+      </div>
+    </div>
+
+    <div id="modal-silver" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-silver-title" aria-hidden="true">
+      <div class="modal-content">
+        <h2 id="modal-silver-title">Silver Membership Benefits</h2>
+        <p>All Bronze benefits, plus:</p>
+        <ul>
+          <li>Featured listing in directory</li>
+          <li>25% discount on chamber events</li>
+          <li>Sponsorship opportunities</li>
+          <li>Spotlight in monthly newsletter</li>
+          <li>Priority registration for workshops</li>
+        </ul>
+        <button type="button" class="modal-close" aria-label="Close modal">Close</button>
+      </div>
+    </div>
+
+    <div id="modal-gold" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-gold-title" aria-hidden="true">
+      <div class="modal-content">
+        <h2 id="modal-gold-title">Gold Membership Benefits</h2>
+        <p>All Silver benefits, plus:</p>
+        <ul>
+          <li>Home page spotlight placement</li>
+          <li>50% discount on chamber events</li>
+          <li>Premium advertising options</li>
+          <li>Exclusive leadership roundtables</li>
+          <li>Annual recognition at chamber gala</li>
+        </ul>
+        <button type="button" class="modal-close" aria-label="Close modal">Close</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <section class="contact-info">
+        <h2>Contact</h2>
+        <p>Las Palmas Chamber of Commerce</p>
+        <p>123 Main Street</p>
+        <p>Las Palmas, Canary Islands, Spain</p>
+        <p><a href="tel:+34928000111">+34 928 000 111</a></p>
+        <p><a href="mailto:info@laspalmaschamber.org">info@laspalmaschamber.org</a></p>
+      </section>
+
+      <section class="social-links">
+        <h2>Links</h2>
+        <div class="social">
+          <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn profile">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn profile link">
+          </a>
+          <a href="https://github.com/nestorxx-xx" target="_blank" aria-label="GitHub repository">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub repository link">
+          </a>
+          <a href="https://x.com" target="_blank" aria-label="X (Twitter) account">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X (Twitter) account link">
+          </a>
+        </div>
+      </section>
+
+      <section class="development-info">
+        <h2>Development</h2>
+        <p>&copy; <span id="currentyear"></span> Las Palmas Chamber</p>
+        <p>Nestor Gomez Artiles | WDD 231</p>
+        <p id="lastModified"></p>
+      </section>
+    </div>
+  </footer>
+</body>
+</html>

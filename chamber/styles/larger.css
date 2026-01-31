@@ -106,3 +106,17 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Join page - larger screens: form left, membership cards right */
+@media (min-width: 700px) {
+  .join-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .membership-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
