@@ -655,6 +655,7 @@ footer .social {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -670,7 +671,8 @@ footer .social {
 }
 
 .modal-content {
-  background-color: white;
+  background-color: #fff;
+  color: #222;
   border-radius: 8px;
   padding: 1.5rem;
   max-width: 90%;
