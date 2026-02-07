@@ -1,0 +1,211 @@
+/**
+ * Site Plan document styles
+ * Uses the color scheme and typography defined in the plan
+ */
+
+:root {
+  --color-primary: #1a365d;
+  --color-accent: #2b6cb0;
+  --color-background: #edf2f7;
+  --color-text: #2d3748;
+  --color-white: #fff;
+  --font-heading: "Oswald", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+.site-plan-header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.site-plan-header h1 {
+  margin: 0 0 0.25rem 0;
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  opacity: 0.95;
+}
+
+.site-plan-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.plan-section {
+  background-color: var(--color-white);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.plan-section h2 {
+  margin: 0 0 0.75rem 0;
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.35rem;
+}
+
+.plan-section h3 {
+  margin: 1rem 0 0.5rem 0;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--color-primary);
+}
+
+.plan-section p,
+.plan-section li {
+  margin: 0.5rem 0;
+  color: var(--color-text);
+}
+
+.plan-section ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.muted {
+  color: var(--color-text);
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+/* Color scheme swatches */
+.color-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.color-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+}
+
+.color-swatch {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+.primary-bg {
+  background-color: #1a365d;
+}
+
+.accent-bg {
+  background-color: #2b6cb0;
+}
+
+.background-bg {
+  background-color: #edf2f7;
+  border-color: #cbd5e0;
+}
+
+.text-bg {
+  background-color: #2d3748;
+}
+
+/* Typography demo */
+.typography-demo {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--color-background);
+  border-radius: 6px;
+  border-left: 4px solid var(--color-accent);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+/* Wireframes */
+.wireframe {
+  margin: 1rem 0;
+  font-size: 0.85rem;
+}
+
+.wf-block {
+  border: 2px dashed var(--color-accent);
+  background-color: rgba(43, 108, 176, 0.08);
+  color: var(--color-primary);
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+  font-family: var(--font-body);
+}
+
+.wireframe-mobile .wf-block:last-child {
+  margin-bottom: 0;
+}
+
+.wireframe-desktop .wf-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.wireframe-desktop .wf-row:last-of-type {
+  margin-bottom: 0.5rem;
+}
+
+.wireframe-desktop .wf-main-wide {
+  flex: 1;
+}
+
+.wireframe-desktop .wf-side {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.site-plan-footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+}
+
+.site-plan-footer p {
+  margin: 0;
+}
+
+.site-plan-footer a {
+  color: var(--color-white);
+}

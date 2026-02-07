@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site plan for the Basketball Club meetings and events website project. WDD 231 Individual Project.">
+  <meta name="author" content="Nestor Gomez Artiles">
+  <title>Project Site Plan | Basketball Club Meetings &amp; Events</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/site-plan.css">
+</head>
+<body>
+  <header class="site-plan-header">
+    <h1>Project Site Plan</h1>
+    <p class="subtitle">Basketball Club Meetings &amp; Events Website</p>
+  </header>
+
+  <main class="site-plan-main">
+    <section class="plan-section">
+      <h2>Site Name</h2>
+      <p><strong>Hoop Hub</strong></p>
+      <p>This name was chosen because it represents a central place (“hub”) for basketball club activity—meetings, practice schedules, and events—while “hoop” clearly identifies the sport. It is short, memorable, and relevant to the project.</p>
+      <p class="muted">Optional domain idea: hoop-hub.org</p>
+    </section>
+
+    <section class="plan-section">
+      <h2>Site Purpose</h2>
+      <p>The site will serve as an informational hub for a basketball club focused on team meetings, practice schedules, and events. It will provide:</p>
+      <ul>
+        <li>A home page with an overview of the club</li>
+        <li>A page showing upcoming meetings and practice times</li>
+        <li>A page with detailed information about games, events, and player participation</li>
+        <li>Dynamic display of meeting and event data using JavaScript</li>
+        <li>Interactive features such as viewing details in modal dialogs and saving user preferences</li>
+      </ul>
+    </section>
+
+    <section class="plan-section">
+      <h2>Scenarios</h2>
+      <p>These questions reflect typical visitors (players, parents, and coordinators) and guide the content:</p>
+      <ul>
+        <li>When is the next team practice and where is it held?</li>
+        <li>How can I see which games and events are coming up and get details or sign up?</li>
+        <li>Where do I find contact information for club directors or coaches?</li>
+      </ul>
+    </section>
+
+    <section class="plan-section">
+      <h2>Color Scheme</h2>
+      <p>At least two colors are defined below and applied throughout this document.</p>
+      <ul class="color-list">
+        <li><span class="color-swatch primary-bg"></span> <strong>Primary (#1a365d)</strong> — Headings, navigation background, footer background</li>
+        <li><span class="color-swatch accent-bg"></span> <strong>Accent (#2b6cb0)</strong> — Links, buttons, and accent elements</li>
+        <li><span class="color-swatch background-bg"></span> <strong>Background (#edf2f7)</strong> — Page and section backgrounds</li>
+        <li><span class="color-swatch text-bg"></span> <strong>Text (#2d3748)</strong> — Body text and paragraphs</li>
+      </ul>
+    </section>
+
+    <section class="plan-section">
+      <h2>Typography</h2>
+      <p>Two fonts are selected and used in this document:</p>
+      <ul>
+        <li><strong>Oswald</strong> — Used for main headings (h1, h2) to give a strong, sport-oriented look.</li>
+        <li><strong>Open Sans</strong> — Used for body text, paragraphs, and lists for readability.</li>
+      </ul>
+      <p class="typography-demo">
+        <span class="font-heading">Sample heading (Oswald)</span><br>
+        <span class="font-body">Sample body text: The quick brown fox jumps over the lazy dog. (Open Sans)</span>
+      </p>
+    </section>
+
+    <section class="plan-section">
+      <h2>Wireframe</h2>
+      <p>Simple layout sketches for the home page: mobile view (stacked) and larger viewport (desktop/tablet).</p>
+
+      <h3>Mobile view</h3>
+      <div class="wireframe wireframe-mobile">
+        <div class="wf-block wf-header">Header / Logo</div>
+        <div class="wf-block wf-nav">Navigation</div>
+        <div class="wf-block wf-hero">Hero / Welcome</div>
+        <div class="wf-block wf-main">Main content (meetings / events)</div>
+        <div class="wf-block wf-side">Side info (optional)</div>
+        <div class="wf-block wf-footer">Footer</div>
+      </div>
+
+      <h3>Desktop / tablet view</h3>
+      <div class="wireframe wireframe-desktop">
+        <div class="wf-block wf-header">Header / Logo</div>
+        <div class="wf-block wf-nav">Navigation</div>
+        <div class="wf-row">
+          <div class="wf-block wf-hero">Hero / Welcome</div>
+        </div>
+        <div class="wf-row">
+          <div class="wf-block wf-main wf-main-wide">Main content (meetings / events)</div>
+          <div class="wf-block wf-side">Side info / Calendar</div>
+        </div>
+        <div class="wf-block wf-footer">Footer</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-plan-footer">
+    <p>&copy; <span id="currentyear"></span> Nestor Gomez Artiles | WDD 231 | Project Site Plan</p>
+  </footer>
+
+  <script>
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
