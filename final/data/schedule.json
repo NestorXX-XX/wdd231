@@ -1,0 +1,220 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "title": "Team Practice - Fundamentals",
+      "date": "2026-02-01",
+      "time": "5:00 PM",
+      "location": "Main Gym",
+      "description": "Focus on dribbling, passing, and basic plays. All skill levels welcome.",
+      "type": "meeting"
+    },
+    {
+      "id": "2",
+      "title": "Scrimmage vs. Eastside",
+      "date": "2026-02-03",
+      "time": "7:00 PM",
+      "location": "Home Court",
+      "description": "Friendly scrimmage. Arrive 30 minutes early for warm-up.",
+      "type": "event"
+    },
+    {
+      "id": "3",
+      "title": "Coaches Meeting",
+      "date": "2026-02-05",
+      "time": "6:30 PM",
+      "location": "Club Office",
+      "description": "Strategy and roster discussion. Coaches and assistants only.",
+      "type": "meeting"
+    },
+    {
+      "id": "4",
+      "title": "Youth Clinic",
+      "date": "2026-02-07",
+      "time": "10:00 AM",
+      "location": "Community Center",
+      "description": "Free clinic for ages 8–12. Registration required.",
+      "type": "event"
+    },
+    {
+      "id": "5",
+      "title": "Team Practice - Defense",
+      "date": "2026-02-08",
+      "time": "5:00 PM",
+      "location": "Main Gym",
+      "description": "Defensive drills and zone coverage.",
+      "type": "meeting"
+    },
+    {
+      "id": "6",
+      "title": "League Game: Hoop Hub vs. North Stars",
+      "date": "2026-02-10",
+      "time": "6:00 PM",
+      "location": "Home Court",
+      "description": "Regular season game. Wear official jersey.",
+      "type": "event"
+    },
+    {
+      "id": "7",
+      "title": "Parent Info Session",
+      "date": "2026-02-12",
+      "time": "7:00 PM",
+      "location": "Club Office",
+      "description": "Schedule, fees, and volunteer opportunities.",
+      "type": "meeting"
+    },
+    {
+      "id": "8",
+      "title": "Team Practice - Offense",
+      "date": "2026-02-14",
+      "time": "5:00 PM",
+      "location": "Main Gym",
+      "description": "Pick-and-roll and set plays.",
+      "type": "meeting"
+    },
+    {
+      "id": "9",
+      "title": "Away Game: Hoop Hub @ Riverside",
+      "date": "2026-02-15",
+      "time": "5:30 PM",
+      "location": "Riverside Arena",
+      "description": "Bus departs at 4:00 PM from Main Gym.",
+      "type": "event"
+    },
+    {
+      "id": "10",
+      "title": "Film Review",
+      "date": "2026-02-17",
+      "time": "6:00 PM",
+      "location": "Club Office",
+      "description": "Review of recent games. Players and coaches.",
+      "type": "meeting"
+    },
+    {
+      "id": "11",
+      "title": "All-Star Weekend",
+      "date": "2026-02-18",
+      "time": "2:00 PM",
+      "location": "City Arena",
+      "description": "League all-star event. Spectators welcome.",
+      "type": "event"
+    },
+    {
+      "id": "12",
+      "title": "Team Practice - Full Court",
+      "date": "2026-02-19",
+      "time": "5:00 PM",
+      "location": "Main Gym",
+      "description": "Full-speed drills and conditioning.",
+      "type": "meeting"
+    },
+    {
+      "id": "13",
+      "title": "League Game: Hoop Hub vs. Westside",
+      "date": "2026-02-21",
+      "time": "7:00 PM",
+      "location": "Home Court",
+      "description": "Regular season game.",
+      "type": "event"
+    },
+    {
+      "id": "14",
+      "title": "Captain's Meeting",
+      "date": "2026-02-22",
+      "time": "5:30 PM",
+      "location": "Club Office",
+      "description": "Team captains only. Leadership and feedback.",
+      "type": "meeting"
+    },
+    {
+      "id": "15",
+      "title": "Team Practice - Free Throws",
+      "date": "2026-02-24",
+      "time": "5:00 PM",
+      "location": "Main Gym",
+      "description": "Free throw and end-of-game situations.",
+      "type": "meeting"
+    },
+    {
+      "id": "16",
+      "title": "Community Tournament",
+      "date": "2026-02-26",
+      "time": "9:00 AM",
+      "location": "Community Center",
+      "description": "One-day tournament. Multiple age groups.",
+      "type": "event"
+    },
+    {
+      "id": "17",
+      "title": "Team Practice - Scrimmage",
+      "date": "2026-02-27",
+      "time": "5:00 PM",
+      "location": "Main Gym",
+      "description": "Intra-squad scrimmage. Referee practice.",
+      "type": "meeting"
+    },
+    {
+      "id": "18",
+      "title": "Away Game: Hoop Hub @ Valley",
+      "date": "2026-02-28",
+      "time": "6:00 PM",
+      "location": "Valley Sports Complex",
+      "description": "Regular season away game.",
+      "type": "event"
+    },
+    {
+      "id": "19",
+      "title": "Team Practice - Conditioning",
+      "date": "2026-03-01",
+      "time": "5:00 PM",
+      "location": "Main Gym",
+      "description": "Strength and conditioning focus.",
+      "type": "meeting"
+    },
+    {
+      "id": "20",
+      "title": "Board Meeting",
+      "date": "2026-03-02",
+      "time": "6:00 PM",
+      "location": "Club Office",
+      "description": "Monthly board meeting. Open to members.",
+      "type": "meeting"
+    },
+    {
+      "id": "21",
+      "title": "Referee Training",
+      "date": "2026-03-04",
+      "time": "5:30 PM",
+      "location": "Main Gym",
+      "description": "Certification and rule updates.",
+      "type": "meeting"
+    },
+    {
+      "id": "22",
+      "title": "Team Practice - Strategy",
+      "date": "2026-03-05",
+      "time": "5:00 PM",
+      "location": "Main Gym",
+      "description": "Playbook and in-game strategy.",
+      "type": "meeting"
+    },
+    {
+      "id": "23",
+      "title": "Spring Tournament",
+      "date": "2026-03-07",
+      "time": "9:00 AM",
+      "location": "City Arena",
+      "description": "Two-day spring tournament. All teams.",
+      "type": "event"
+    },
+    {
+      "id": "24",
+      "title": "Team Practice - Final Prep",
+      "date": "2026-03-08",
+      "time": "5:00 PM",
+      "location": "Main Gym",
+      "description": "Final practice before tournament weekend.",
+      "type": "meeting"
+    }
+  ]
+}

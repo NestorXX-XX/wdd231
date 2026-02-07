@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hoop Hub games and events. Upcoming matches, tournaments, and community events.">
+  <meta name="author" content="Nestor Gomez Artiles">
+  <title>Events &amp; Games | Hoop Hub</title>
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <meta property="og:title" content="Events &amp; Games | Hoop Hub">
+  <meta property="og:description" content="Upcoming games, tournaments, and community events.">
+  <meta property="og:url" content="https://nestorxx-xx.github.io/wdd231/final/events.html">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <span class="site-logo" aria-hidden="true">🏀</span>
+    <span class="site-name">Hoop Hub</span>
+    <button type="button" id="nav-button" class="hamburger" aria-label="Open menu"></button>
+  </header>
+
+  <nav id="nav-bar" class="navigation" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="meetings.html">Meetings</a></li>
+      <li class="current"><a href="events.html">Events</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Events &amp; Games</h1>
+    <p class="page-intro">Games, scrimmages, and community events. Click an item for full details.</p>
+
+    <section class="view-controls" aria-label="Display options">
+      <button type="button" id="view-grid" class="view-btn active">Grid</button>
+      <button type="button" id="view-list" class="view-btn">List</button>
+    </section>
+
+    <section id="schedule-container" class="schedule-container" aria-label="Events">
+      <div id="schedule-list" class="cards-container"></div>
+    </section>
+  </main>
+
+  <div id="detail-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-content">
+      <h2 id="modal-title">Details</h2>
+      <div id="modal-body"></div>
+      <button type="button" class="modal-close" aria-label="Close">Close</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p><a href="attributions.html">Attributions</a></p>
+    <p><a href="https://youtube.com" target="_blank" rel="noopener">WDD 231 Project Video Demonstration</a> <span class="muted">(replace with your video link)</span></p>
+    <p>&copy; <span id="currentyear"></span> Hoop Hub | Nestor Gomez Artiles | WDD 231</p>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/schedule.js"></script>
+</body>
+</html>

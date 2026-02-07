@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join Hoop Hub. Sign up for the basketball club and get updates on meetings and events.">
+  <meta name="author" content="Nestor Gomez Artiles">
+  <title>Join the Club | Hoop Hub</title>
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <meta property="og:title" content="Join the Club | Hoop Hub">
+  <meta property="og:description" content="Sign up for the basketball club and get updates.">
+  <meta property="og:url" content="https://nestorxx-xx.github.io/wdd231/final/join.html">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <span class="site-logo" aria-hidden="true">🏀</span>
+    <span class="site-name">Hoop Hub</span>
+    <button type="button" id="nav-button" class="hamburger" aria-label="Open menu"></button>
+  </header>
+
+  <nav id="nav-bar" class="navigation" aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="meetings.html">Meetings</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li class="current"><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Join the Club</h1>
+    <p class="page-intro">Submit the form below to join Hoop Hub and receive updates on practices and events.</p>
+
+    <section class="form-section">
+      <form method="get" action="thankyou.html" id="join-form">
+        <label for="name">
+          Full name
+          <input type="text" id="name" name="name" title="Your full name" autocomplete="name" required>
+        </label>
+        <label for="email">
+          Email
+          <input type="email" id="email" name="email" title="Your email address" autocomplete="email" placeholder="you@example.com" required>
+        </label>
+        <label for="message">
+          Message (optional)
+          <textarea id="message" name="message" title="Optional message" rows="4"></textarea>
+        </label>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="attributions.html">Attributions</a></p>
+    <p><a href="https://youtube.com" target="_blank" rel="noopener">WDD 231 Project Video Demonstration</a> <span class="muted">(replace with your video link)</span></p>
+    <p>&copy; <span id="currentyear"></span> Hoop Hub | Nestor Gomez Artiles | WDD 231</p>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
