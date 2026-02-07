@@ -744,3 +744,113 @@ footer .social {
 .thankyou-content a:hover {
   text-decoration: underline;
 }
+
+/* Discover page – small (320px–640px) */
+.visit-message {
+  background-color: #e8f4fc;
+  border: 1px solid #2b6cb0;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: none;
+}
+.visit-message.visible {
+  display: block;
+}
+.visit-message p {
+  margin: 0;
+  padding-right: 2rem;
+}
+.visit-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #333;
+  padding: 0;
+}
+.visit-close:hover {
+  color: #000;
+}
+
+.discover-gallery {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 1rem;
+  box-shadow: none;
+}
+
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.discover-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.discover-card h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.15rem;
+  color: #333;
+}
+
+.discover-card figure {
+  margin: 0 0 0.75rem 0;
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
+}
+
+.discover-card address {
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.discover-card p {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.discover-card .learn-more {
+  padding: 0.4rem 0.9rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.discover-card .learn-more:hover {
+  background-color: #555;
+}
