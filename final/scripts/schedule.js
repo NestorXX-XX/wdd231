@@ -1,8 +1,3 @@
-/**
- * Meetings / Events pages: load data, render 15+ items (4+ props), grid/list view (localStorage), modal details.
- * ES Module – DOM manipulation, array methods, template literals.
- */
-
 import { loadSchedule } from './dataLoader.js';
 import { initModal } from './modals.js';
 

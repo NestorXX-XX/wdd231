@@ -1,8 +1,3 @@
-/**
- * Home page: load schedule and show featured items (template literals, array methods).
- * ES Module.
- */
-
 import { loadSchedule } from './dataLoader.js';
 
 const FEATURED_COUNT = 5;

@@ -215,6 +215,24 @@
       "location": "Main Gym",
       "description": "Final practice before tournament weekend.",
       "type": "meeting"
+    },
+    {
+      "id": "24",
+      "title": "Team Practice - Final Prep",
+      "date": "2026-03-08",
+      "time": "6:00 PM",
+      "location": "Main Gym",
+      "description": "Final practice before tournament weekend.",
+      "type": "meeting"
+    },
+    {
+      "id": "24",
+      "title": "Team Practice - Final Prep",
+      "date": "2026-03-08",
+      "time": "7:00 PM",
+      "location": "Main Gym",
+      "description": "Final practice before tournament weekend.",
+      "type": "meeting"
     }
   ]
 }

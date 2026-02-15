@@ -1,8 +1,3 @@
-/**
- * Thank you page: display form data from URL search params.
- * ES Module.
- */
-
 function displayFormData() {
   const params = new URLSearchParams(window.location.search);
   const dl = document.getElementById('form-summary');

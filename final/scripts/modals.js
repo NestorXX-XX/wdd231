@@ -1,14 +1,3 @@
-/**
- * Modal dialog open/close. Accessible and keyboard-friendly.
- * ES Module.
- */
-
-/**
- * Initialize modal: open on trigger, close on button/overlay/Escape.
- * @param {string} modalId - ID of the modal element
- * @param {string} closeBtnClass - Class of the close button inside the modal
- * @param { (item: object) => void } [onOpen] - Optional callback when opening (e.g. to fill content)
- */
 export function initModal(modalId, closeBtnClass, onOpen) {
   const modal = document.getElementById(modalId);
   if (!modal) return;
